@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: #222;
+  background-image: url("imagens/game_background.png");
+  background-size: cover;
+  background-position: center;
+}
+canvas {
+  background: black;
+  image-rendering: pixelated;
+}
+#ui {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-family: monospace;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-align: center;
+  pointer-events: none; 
+}
+#menuButton {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  padding: 10px 20px;
+  color: white;
+  background-color: rgba(30, 30, 30, 0.85);
+  border: 2px solid white;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 10000;
+  transition: all 0.3s ease;
+}
+
+#menuButton:hover {
+  background-color: white;
+  color: black;
+}
+#startScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+#startScreen .menu {
+  text-align: center;
+  color: white;
+}
+
+#startScreen button {
+  font-size: 24px;
+  padding: 10px 30px;
+  border: 2px solid white;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#startScreen button:hover {
+  background: white;
+  color: black;
+}

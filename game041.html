@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>DAY OFF</title>
+    <link href="estilo_game.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="ui">
+      Quando aparecer a tela de game over, espere 10 segundos e depois aperte
+      "R" para recomeçar.
+    </div>
+    <div id="startScreen">
+      <div class="menu">
+        <h1>DAY OFF</h1>
+        <button id="playButton">PLAY</button>
+        <h2>Como Jogar</h2>
+        <p>
+          Use WASD para se mover.<br />
+          Passe das 8 fases para vencer o jogo.<br />
+          Cada fase tem um número limitado de passos.<br />
+          Se passar de 0 passos você morre e pode reiniciar.
+        </p>
+        <p style="margin: 24px 0">
+          <strong>Controles:</strong><br />
+          <span>Movimentação: W/A/S/D</span><br />
+          <span>Reiniciar fase: R</span><br />
+          <span>Ao clicar no botão PLAY você começa na primeira fase.</span
+          ><br/>
+        </p>
+      </div>
+    </div>
+
+    <canvas id="desenho1"></canvas>
+
+    <button id="menuButton">MENU</button>
+    <script src="jogo.js"></script>
+  </body>
+</html>
